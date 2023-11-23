@@ -30,4 +30,5 @@ public class EntityController {
     public ResponseEntity<EntityModel> entityByName(@PathVariable String name) {
         return ResponseEntity.ok(EntityModel.createMockModel(name));
     }
+    //11:43
 }
