@@ -47,4 +47,5 @@ public class EntityController {
         log.info("Delete entity by id: {}", id);
         return ResponseEntity.noContent().build();
     }
+    //14:35
 }
