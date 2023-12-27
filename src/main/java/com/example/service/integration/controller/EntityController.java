@@ -31,7 +31,7 @@ public class EntityController {
     public ResponseEntity<EntityModel> entityByName(@PathVariable String name) {
         return ResponseEntity.ok(EntityModel.createMockModel(name));
     }
-    //11:43
+
     @PostMapping
     public ResponseEntity<EntityModel> createEntity(@RequestBody UpsertEntityRequest request) {
         return ResponseEntity.status(HttpStatus.CREATED).body(EntityModel.createMockModel(request.getName()));
@@ -47,5 +47,4 @@ public class EntityController {
         log.info("Delete entity by id: {}", id);
         return ResponseEntity.noContent().build();
     }
-    //14:35
 }
